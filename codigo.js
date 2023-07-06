@@ -1,7 +1,7 @@
 
 const tasa = 0.97;
 
-const anual= 365 
+const anual= 365
 
 
 let nombreUsuario = prompt ("Ingrese su nombre");
@@ -10,17 +10,30 @@ console.log (nombreUsuario);
 
 alert("hola " + nombreUsuario + "!");
 
-let montoDeInversion = prompt ("Por Favor, ingrese el monto en Pesos Argentinos que desea calcular"); 
-if (montoDeInversion >= 499999) {
-    alert("El monto es valido, puedes continuar");
-    let cantidadDeDias = prompt ("Ingrese el Plazo en dias!")
+let montoDeInversion = prompt ("Por Favor, ingrese el monto en Pesos Argentinos que desea calcular");
 
-let resultado = (((montoDeInversion * tasa) / anual)* cantidadDeDias)
-console.log (resultado)
-alert (nombreUsuario + " El interes por " + cantidadDeDias + " dias es de $" + resultado )
+while (montoDeInversion <500000){
+    alert("Ese monto es muy bajo, por favor, ingresa monto desde $500000");
+    montoDeInversion = prompt ("Por Favor, ingrese el monto en Pesos Argentinos que desea calcular");
 }
-else {
-    alert("Ese monto es muy bajo, mejor pagate un asado y disfrutalo con amigos")};
+
+
+(montoDeInversion >=500000)
+alert("El monto es valido, puedes continuar");
+
+let cantidadDeDias = prompt ("Ingrese el Plazo en dias!");
+
+while (cantidadDeDias <30){
+    alert ("El Plazo minimo para plazo fijo es de 30 días");
+    cantidadDeDias= prompt ("ingrese nuevamente el plazo");
+}
+
+ let resultado = (((montoDeInversion * tasa) / anual)* cantidadDeDias);
+console.log (resultado);
+    alert (nombreUsuario + " El interes por " + cantidadDeDias + " dias es de $" + resultado );
+
+
+
 
 
 
