@@ -3,6 +3,11 @@ const tasa = 0.97;
 
 const anual= 365
 
+function calculoFinal (montoDeInversion, cantidadDeDias){
+    return (((montoDeInversion * tasa) / anual)* cantidadDeDias);
+    
+
+}
 
 let nombreUsuario = prompt ("Ingrese su nombre");
 
@@ -28,7 +33,7 @@ while (cantidadDeDias <30){
     cantidadDeDias= prompt ("ingrese nuevamente el plazo");
 }
 
- let resultado = (((montoDeInversion * tasa) / anual)* cantidadDeDias);
+ let resultado = calculoFinal (montoDeInversion,cantidadDeDias);
 console.log (resultado);
     alert (nombreUsuario + " El interes por " + cantidadDeDias + " dias es de $" + resultado );
 
