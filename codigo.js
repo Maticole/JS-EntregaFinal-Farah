@@ -1,15 +1,51 @@
+const ANUAL= 365
 
-const tasa = 0.97;
+const OPCION1 = {
 
-const anual= 365
+    montoMaximo: 1000000,
+    plazo: 30,
+    tasa: 0.90
 
-function calculoFinal (montoDeInversion, cantidadDeDias){
-    return (((montoDeInversion * tasa) / anual)* cantidadDeDias);
+}
+const OPCION2 = {
+
+    montoMaximo: 2000000,
+    plazo: 60,
+    tasa: 0.95
+
+}
+const OPCION3 = {
+
+    montoMaximo: 3000000,
+    plazo: 90,
+    tasa: 0.99
+
+}
+
+const OPCIONES = [OPCION1, OPCION2, OPCION3];
+
+function calcularOpcion (montoDeInversion) {
+    // for (let index = 0; index < OPCIONES.length; index++) {
+    //     const opcion = OPCIONES[index];
+    //     if (opcion.montoMaximo >=montoDeInversion) {
+    //         return opcion;
+    //     }
+        
+    // }
+    return OPCIONES.find ((opcion) => opcion.montoMaximo >=montoDeInversion ) 
     
 
 }
 
-let nombreUsuario = prompt ("Ingrese su nombre");
+
+
+function calculoFinal (montoDeInversion, opcion){
+    return (((montoDeInversion * opcion.tasa) / ANUAL)* opcion.plazo);
+    
+
+}
+
+const nombreUsuario = prompt ("Ingrese su nombre");
 
 console.log (nombreUsuario);
 
@@ -23,22 +59,13 @@ while (montoDeInversion <500000){
 }
 
 
-(montoDeInversion >=500000)
 alert("El monto es valido, puedes continuar");
 
-let cantidadDeDias = prompt ("Ingrese el Plazo en dias!");
 
-while (cantidadDeDias <30){
-    alert ("El Plazo minimo para plazo fijo es de 30 días");
-    cantidadDeDias= prompt ("ingrese nuevamente el plazo");
-}
+const opcionElegida = calcularOpcion (montoDeInversion)
 
- let resultado = calculoFinal (montoDeInversion,cantidadDeDias);
+
+
+let resultado = calculoFinal (montoDeInversion,opcionElegida);
 console.log (resultado);
-    alert (nombreUsuario + " El interes por " + cantidadDeDias + " dias es de $" + resultado );
-
-
-
-
-
-
+    alert (nombreUsuario + " El interes por " + opcionElegida.plazo + " dias es de $" + resultado );
