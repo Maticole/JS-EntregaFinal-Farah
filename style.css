@@ -61,3 +61,20 @@ span {
     border-color: red;
     border-style: outset;
 }
+
+.textoClima {
+
+    margin: 20px;
+    font-size: 35px;
+
+}
+.textoClima span {
+
+    font-size: 25px;
+    border: 2px solid;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2rem;
+    border-color: red;
+    border-style: outset;
+}

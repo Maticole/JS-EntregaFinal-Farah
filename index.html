@@ -8,6 +8,8 @@
 </head>
 <body>
     <header>
+        
+        <P class="textoClima"> Clima: <span id="climatologia"></span></P>
         <h1>Banco de inversiones Montoto</h1>
     </header>
     <main>
@@ -17,6 +19,8 @@
         <div>      
             <form action="">
                 <input type="text"  placeholder="Nombre:" title="complete su nombre" id="nombre">
+                <input type="text"  placeholder="Edad:" title="Ingrese su edad" id="edad">
+                <Button id="sweetAlert" class="btn">Verificar</Button>
                 <input type="text" placeholder="Monto de la inversion" title="Ingrese monto a calcular" id="montoDeInversion">
                 <input type="submit" value="Calcular" id="boton">               
             </form>
@@ -31,6 +35,8 @@
         <h3>Resultado de tu Inversion</h3>
         <p class="resultadoFinal"><span id="textoResultado"></span></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./codigo.js"></script>
 </body>
 
