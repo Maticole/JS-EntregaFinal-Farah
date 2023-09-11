@@ -4,16 +4,14 @@
     background-color: rgb(91, 176, 216);
 }
 
-
 h1 {
     margin: 0%;
-    padding: 10%;  
+    padding: 10%;
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 90px;
 }
-
 
 h2 {
     margin: 0%;
@@ -23,6 +21,23 @@ h2 {
     justify-content: center;
     text-align: center;
 }
+
+.opciones {
+
+    font-size: 15px;
+    margin: 10%;
+    padding: 20px;
+    color: hsl(120, 8%, 5%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: unset;
+    gap: 15px;
+    border-color: red;
+    border-style: outset;
+}
+
 form {
     list-style: none;
     display: flex;
@@ -30,9 +45,8 @@ form {
     gap: 10px;
     max-width: 500px;
     margin: auto;
-
-
 }
+
 h3 {
     font-size: 60px;
     margin: 30px;
@@ -42,16 +56,15 @@ h3 {
     color: red;
     text-align: center;
 }
+
 .resultadoFinal {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
     padding-top: 30px;
-    
-
-
 }
+
 span {
     font-size: 40px;
     border: 2px solid;
@@ -63,13 +76,11 @@ span {
 }
 
 .textoClima {
-
     margin: 20px;
     font-size: 35px;
-
 }
-.textoClima span {
 
+.textoClima span {
     font-size: 25px;
     border: 2px solid;
     margin: 5px;

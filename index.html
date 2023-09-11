@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo de Plazo Fijo</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
-        
         <P class="textoClima"> Clima: <span id="climatologia"></span></P>
         <h1>Banco de inversiones Montoto</h1>
     </header>
     <main>
-        
-        <div class="simula">
-            <h2>Calcula tu plazo fijo</h2>
-        <div>      
-            <form action="">
-                <input type="text"  placeholder="Nombre:" title="complete su nombre" id="nombre">
-                <input type="text"  placeholder="Edad:" title="Ingrese su edad" id="edad">
-                <Button id="sweetAlert" class="btn">Verificar</Button>
-                <input type="text" placeholder="Monto de la inversion" title="Ingrese monto a calcular" id="montoDeInversion">
-                <input type="submit" value="Calcular" id="boton">               
-            </form>
-        </div>  
-
 
         </div>
 
+        <h2>Calcula tu plazo fijo</h2>
+
+        <Div class="opciones">
+            <P class="1">Hasta 3MM tasa del 118% Anual</P>
+            <p class="2">Desde 3MM hasta 6MM tasa del 130% Anual</p>
+            <p class="3">Desde 6MM en adelante tasa del 140% Anual</p>
+
+        </div>
+
+        <form action="">
+            <input type="text" placeholder="Nombre:" title="complete su nombre" id="nombre">
+            <input type="text" placeholder="Edad:" title="Ingrese su edad" id="edad">
+            <input type="text" placeholder="Monto de la inversion" title="Ingrese monto a calcular"
+                id="montoDeInversion">
+            <input type="submit" value="Calcular" id="boton">
+        </form>
 
     </main>
     <footer>
@@ -39,6 +43,5 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./codigo.js"></script>
 </body>
-
 
 </html>

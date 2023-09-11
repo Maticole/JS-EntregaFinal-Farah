@@ -1,0 +1,17 @@
+[
+    {
+        "montoMaximo": 3000000,
+        "plazo": 30,
+        "tasa": 1.18
+    },
+    {
+        "montoMaximo": 6000000,
+        "plazo": 30,
+        "tasa": 1.30
+    },
+    {
+        "montoMaximo": 10000000,
+        "plazo": 30,
+        "tasa": 1.40
+    }
+]
